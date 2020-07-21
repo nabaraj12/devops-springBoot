@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3fbf19c-35c0-42fd-873f-006019f3ff39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/CalculatorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MessageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-07-21T11-51-02_838-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TestCalculatorService.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TestMessageService.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TestCalculatorService.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TestMessageService.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TestCalculatorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TestMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TestCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TestCalculatorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +34,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestCalculatorService">
+    <configuration name="TestCalculatorService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cicd-pipeline" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.TestCalculatorService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMessageService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cicd-pipeline" />
       <extension name="coverage">
@@ -65,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCalculatorService" />
         <item itemvalue="JUnit.TestMessageService" />
       </list>
     </recent_temporary>
@@ -83,6 +86,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1322" height="2" key="GridCell.Tab.0.bottom" timestamp="1595314025801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595314025801" />
+    <state width="1322" height="2" key="GridCell.Tab.0.center" timestamp="1595314025801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595314025801" />
+    <state width="1322" height="2" key="GridCell.Tab.0.left" timestamp="1595314025800">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595314025800" />
+    <state width="1322" height="2" key="GridCell.Tab.0.right" timestamp="1595314025801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595314025801" />
     <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1595311907059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

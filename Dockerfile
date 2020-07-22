@@ -5,3 +5,4 @@ COPY ${JAR_FILE} app.jar
 RUN echo "Creating docker image"
 MAINTAINER "NABARAJ SENGUPTA"
 ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]

@@ -1,0 +1,16 @@
+node{
+    stage('git checkout')
+    {
+        git 'https://github.com/nabaraj12/war-test.git'
+    }
+    stage('build and test')
+    {
+        def mavenHome = tool name : 'maven 3' , type: 'maven'
+        def mavenCMD = "$mavenHome/bin/mvn"
+        sh "$mavenCMD clean package"
+    }
+    stage('tomcat deploy')
+    {
+        deploy adapters: [tomcat8(credentialsId: 'tomcat-password', path: '', url: 'http://localhost:8888/')], contextPath: 'freestyle', war: '**/*.war'
+    }
+}

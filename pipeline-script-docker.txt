@@ -1,0 +1,34 @@
+node{
+    def docker=tool name: 'Docker_Jenkins', type: 'dockerTool'
+    def dockerCMD = "$docker/bin/docker"
+    stage('git checkout')
+    {
+        git 'https://github.com/nabaraj12/devops-springBoot.git'
+    }
+    stage('build and test')
+    {
+        def mavenHome = tool name : 'Maven 3' , type: 'maven'
+        def mavenCMD = "$mavenHome/bin/mvn"
+        sh "$mavenCMD clean package"
+    }
+    
+    stage('docker build')
+    {
+       sh "$dockerCMD build -t nabaraj1/cicd-demo:2.0 ."
+    }
+    
+    stage('docker push')
+    {
+    withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
+       sh "$dockerCMD login -u nabaraj1 -p ${dockerHubPwd}"
+    }
+       sh "$dockerCMD push nabaraj1/cicd-demo:2.0"
+    }
+    stage('docker run')
+    {
+       sh "$dockerCMD run -p 8080:8081 -d nabaraj1/cicd-demo:2.0"
+    }
+}
+
+
+

@@ -1,0 +1,15 @@
+- name : ec2-launcher
+  hosts : localhost
+  connection : local
+  tasks :
+  - name : launch ec2
+    ec2 :
+     instance_type : t2.micro
+     key_name : devops-ec2
+     image : ami-0bdcc6c05dec346bf
+     region : us-east-2
+     group : launch-wizard-1
+     count : 1
+     vpc_subnet_id : subnet-9a3005f2
+     wait : yes
+     assign_public_ip : yes
